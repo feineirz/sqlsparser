@@ -23,8 +23,10 @@ export class SqlsParser {
         ti: ' TINYINT ',
         tiu: ' TINYINT UNSIGNED ',
         i: ' INT ',
+        us: ' UNSIGNED ',
         iu: ' INT UNSIGNED ',
         iunn: ' INT UNSIGNED NOT NULL ',
+        iunnun: ' INT UNSIGNED NOT NULL UNIQUE ',
         iudf: ' INT UNSIGNED DEFAULT ',
         iudf0: ' INT UNSIGNED DEFAULT 0 ',
         iudf1: ' INT UNSIGNED DEFAULT 1 ',
@@ -98,10 +100,14 @@ export class SqlsParser {
         email: ' email VARCHAR(64) NOT NULL UNIQUE ',
         phone: ' phone VARCHAR(100) NOT NULL UNIQUE ',
         desc: ' description TEXT ',
+        rem: ' remark TEXT ',
+        name: ' name VARCHAR(100) NOT NULL UNIQUE ',
         price: ' price DECIMAL(11, 2) NOT NULL ',
         price0: ' price DECIMAL(11, 2) DEFAULT 0 ',
         uprice: ' unitprice DECIMAL(11, 2) NOT NULL ',
         uprice0: ' unitprice DECIMAL(11, 2) DEFAULT 0 ',
+        qty: ' quantity INT UNSIGNED NOT NULL ',
+        qty0: ' quantity INT UNSIGNED DEFAULT 0 ',
     }
 
     static sortedAliases = Object.keys(this.aliases)
