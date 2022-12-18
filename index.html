@@ -16,11 +16,25 @@
             </nav>
         </header>
 
+        <div class="modal-container">
+            <button class="close-modal">X</button>
+            <div class="alias-list-title">Aliases</div>
+            <div class="alias-list-container"></div>
+            <div class="alias-footer">
+                <div class="alias-footer-item">usage: -alias[-alias]- or -alias-normal value -alias-</div>
+                <div class="alias-footer-item">sample: -cdb-demo -dbumgci-;</div>
+                <div class="alias-footer-item">
+                    result: CREATE DATABASE demo CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+                </div>
+            </div>
+        </div>
+
         <main>
             <div class="container">
                 <div class="title">
                     <img src="image.jpg" alt="" />
                     SQLs Parser
+                    <div class="link-container" id="show-alias-list">Aliases</div>
                 </div>
                 <div class="content-block">
                     <div class="source-block">
