@@ -55,7 +55,7 @@ sourceSqls.addEventListener('keydown', e => {
 })
 
 sourceSqls.addEventListener('keyup', e => {
+    const selStart = sourceSqls.selectionStart
     resultSql.value = SqlsParser.parse(sourceSqls.value)
-    sourceSqls.scrollTop = sourceSqls.scrollHeight
-    resultSql.scrollTop = resultSql.scrollHeight
+    resultSql.scrollTop = selStart
 })
