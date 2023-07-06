@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SQLS Parser</title>
+
+        <link rel="stylesheet" href="index.css" />
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navbar"></div>
+            </nav>
+        </header>
+
+        <div class="modal-container">
+            <button class="close-modal">X</button>
+            <div class="alias-list-title">Aliases</div>
+            <div class="alias-list-container"></div>
+            <div class="alias-footer">
+                <div class="alias-footer-item">usage: -alias[-alias]- or -alias-normal value -alias-</div>
+                <div class="alias-footer-item">sample: -cdb-demo -dbumgci-;</div>
+                <div class="alias-footer-item">
+                    result: CREATE DATABASE demo CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="container">
+                <div class="title">
+                    <img src="image.jpg" alt="" />
+                    <span class="main-title">SQLs Parser</span>
+                    <div class="link-container" id="show-alias-list">Aliases</div>
+                </div>
+                <div class="content-block">
+                    <div class="source-block">
+                        <div class="sub-title">Source - SQLs</div>
+                        <textarea name="source-sqls" id="source-sqls"></textarea>
+                    </div>
+                    <div class="result-block">
+                        <div class="sub-title">Result - SQL</div>
+                        <textarea name="result-sql" id="result-sql"></textarea>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
