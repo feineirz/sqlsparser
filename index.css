@@ -8,7 +8,7 @@ body {
     padding: 1rem;
     font-family: monospace;
     font-size: 18px;
-    background-color: #18396b;
+    background-color: #9d8189;
 }
 
 a:link,
@@ -106,7 +106,7 @@ a:visited {
     width: auto;
     height: calc(100vh - 2rem);
     border-radius: 10px;
-    background-color: #98cadf;
+    background-color: #f8edeb;
 }
 
 .title {
@@ -117,7 +117,7 @@ a:visited {
     width: auto;
     border-radius: 10px 10px 0 0;
     color: #69153f;
-    background-color: #deeffd;
+    background-color: #ffb5a7;
 }
 .title .main-title {
     font-size: 56px;
@@ -159,6 +159,7 @@ a:visited {
     border-radius: 5px;
     font-size: 20px;
     tab-size: 4;
+    background-color: #f8edeb;
 }
 
 .source-block {
@@ -167,14 +168,25 @@ a:visited {
     width: 45%;
     height: calc(100%);
     border-radius: 5px;
-    background-color: #fffbeb;
+    background-color: #fcd5ce;
 }
+.source-block textarea:focus {
+    outline: solid 1px #ffb5a7;
+    box-shadow: #ffb5a7 0 0 5px;
+    background-color: #fcfcfc;
+}
+
 .result-block {
     padding: 1rem;
     width: 55%;
     height: calc(100%);
     border-radius: 5px;
-    background-color: #eefffb;
+    background-color: #f9dcc4;
+}
+.result-block textarea:focus {
+    outline: solid 1px #ffb5a7;
+    box-shadow: #ffb5a7 0 0 5px;
+    background-color: #fcfcfc;
 }
 
 @media only screen and (max-width: 1200px) {
